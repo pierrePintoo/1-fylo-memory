@@ -1,0 +1,20 @@
+$dark-violet: rgb(12, 18, 44);
+$middle-violet: rgb(30, 44, 105);
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: $dark-violet no-repeat bottom url(./images/bg-desktop.png);
+}
+
+p {
+  color: white;
+}
+
+
