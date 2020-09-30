@@ -12,29 +12,38 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-smartphone.css">
     <title>Frontend Mentor | Fylo data storage component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
     <div class="options-container">
-      <p><img src="images/logo.svg" alt="logo_fylo" /></p>
-      <ul>
-        <li><img src="images/icon-document.svg" alt="document" /></li>
-        <li><img src="images/icon-folder.svg" alt="folder" /></li>
-        <li><img src="images/icon-upload.svg" alt="upload" /></li>
+      <p class="options-container__logo">
+        <img src="images/logo.svg" alt="logo_fylo" height="70%" />
+      </p>
+      <ul class="options-container-list-icons">
+        <li class="options-container-list-icons__icon">
+          <img src="images/icon-document.svg" alt="document" />
+        </li>
+        <li class="options-container-list-icons__icon">
+          <img src="images/icon-folder.svg" alt="folder" />
+        </li>
+        <li class="options-container-list-icons__icon">
+          <img src="images/icon-upload.svg" alt="upload" />
+        </li>
       </ul>
     </div>
     <div class="progression">
-      <div class="progression__infos">
-        <p>You've used 815 GB of your storage</p>
-        <p>185 GB LEFT</p>
-      </div>
-      <div class="progression__barre"></div>
-      <div class="progression__infos">
-        <p>0 GB</p>
-        <p>1000 GB</p>
-      </div>
+        <p class="progression__left"><span class="progression__left__int">185</span><span class="progression__left__unity">GB LEFT</span></p>
+        <div class="progression__infos">
+          <p class="progression__infos__title">You've used 815 GB of your storage</p>
+          <div class="progression__infos__barre"><div class="progression__infos__barre__gradient"><div class="progression__infos__barre__gradient__balle"></div></div></div>
+          <div class="progression__infos__memory">
+            <p>0 GB</p>
+            <p>1000 GB</p>
+          </div>
+        </div>
     </div>
   </body>
 </html>
